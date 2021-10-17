@@ -8,10 +8,21 @@
     letter-spacing: 0.02em;
 }
 
-.center {
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin button($bg, $br, $padding, $fz, $lh, $color) {
+    display: block;
+    background: $bg;
+    border-radius: $br;
+    padding: $padding;
+    font-weight: 400;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
 }
 
 body {
@@ -85,11 +96,14 @@ button {
                 border-radius: 30px;
                 position: relative;
                 &-btn {
-                    background: inherit;
-                    display: block;
-                    border-radius: 30px 0 0 30px;
-                    padding: 6px 6px 6px 24px;
-                    @extend .signin;
+                    @include button(
+                        inherit,
+                        30px 0 0 30px,
+                        6px 6px 6px 24px,
+                        20px,
+                        30px,
+                        #fff
+                    );
                     &:hover {
                         cursor: pointer;
                         background: $greenHover;
@@ -122,15 +136,14 @@ button {
                 }
                 &-link {
                     @extend .signin;
-                    display: block;
-                    text-align: center;
+                    @extend .flex-center;
                 }
             }
         }
     }
 }
 
-.CTA-block {
+.offer {
     background-image: url('../images/bg.png');
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -148,30 +161,39 @@ button {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.02em;
-        color: #aaaaaa;
+        color: #aaa;
     }
     &__socials {
         margin-top: 43px;
         display: flex;
         &-item {
-            @extend .center;
+            @extend .flex-center;
             width: 60px;
             height: 60px;
             background: #f2f2f2;
             border-radius: 15px;
             margin-right: 34px;
+            &:hover {
+                background: #eee;
+            }
         }
     }
     &__button {
         width: 275px;
-        background: $green;
-        border-radius: 30px;
-        padding: 17px 64px;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: #ffffff;
+        @include button($green, 30px, 17px 64px, 24px, 36px, #fff);
         margin-top: 58px;
+        &:hover {
+            background: $greenHover;
+            cursor: pointer;
+        }
+    }
+}
+
+.search {
+    @extend .flex-center;
+    &__button {
+        width: 283px;
+        @include button($green, 20px, 20px 92px, 24px, 36px, #fff);
         &:hover {
             background: $greenHover;
             cursor: pointer;

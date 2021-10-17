@@ -1,4 +1,4 @@
-.signin, .header__menu-item-sign-btn, .header__menu-item-reg-link {
+.signin, .header__menu-item-reg-link {
   color: #fff;
   font-weight: 500;
   font-size: 20px;
@@ -6,7 +6,7 @@
   letter-spacing: 0.02em;
 }
 
-.center, .CTA-block__socials-item {
+.flex-center, .header__menu-item-reg-link, .offer__socials-item, .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,10 +106,14 @@ button {
 }
 
 .header__menu-item-sign-btn {
-  background: inherit;
   display: block;
+  background: inherit;
   border-radius: 30px 0 0 30px;
   padding: 6px 6px 6px 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
 }
 
 .header__menu-item-sign-btn:hover {
@@ -147,12 +151,7 @@ button {
   background: #4fb163;
 }
 
-.header__menu-item-reg-link {
-  display: block;
-  text-align: center;
-}
-
-.CTA-block {
+.offer {
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -160,30 +159,30 @@ button {
   height: 520px;
 }
 
-.CTA-block__title {
+.offer__title {
   font-weight: 600;
   font-size: 54px;
   line-height: 130%;
   letter-spacing: 0.02em;
 }
 
-.CTA-block__text {
+.offer__text {
   margin-top: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #aaaaaa;
+  color: #aaa;
 }
 
-.CTA-block__socials {
+.offer__socials {
   margin-top: 43px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.CTA-block__socials-item {
+.offer__socials-item {
   width: 60px;
   height: 60px;
   background: #f2f2f2;
@@ -191,19 +190,41 @@ button {
   margin-right: 34px;
 }
 
-.CTA-block__button {
+.offer__socials-item:hover {
+  background: #eee;
+}
+
+.offer__button {
   width: 275px;
+  display: block;
   background: #57be6c;
   border-radius: 30px;
   padding: 17px 64px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: #ffffff;
+  color: #fff;
   margin-top: 58px;
 }
 
-.CTA-block__button:hover {
+.offer__button:hover {
+  background: #4fb163;
+  cursor: pointer;
+}
+
+.search__button {
+  width: 283px;
+  display: block;
+  background: #57be6c;
+  border-radius: 20px;
+  padding: 20px 92px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.search__button:hover {
   background: #4fb163;
   cursor: pointer;
 }
