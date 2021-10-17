@@ -1,0 +1,185 @@
+@import './variables.scss';
+
+.signin {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.content {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 43px 0 0 0;
+
+    &__logo {
+        &-simpcook {
+            font-family: 'Nunito';
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 44px;
+        }
+        & mark {
+            background-color: #fff;
+            font-weight: 700;
+            color: #f58d41;
+        }
+    }
+
+    &__menu {
+        &-list {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+        &-item {
+            margin-left: 55px;
+            &-link {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.02em;
+                color: #222222;
+            }
+            &-sign {
+                display: flex;
+                background: $green;
+                border-radius: 30px;
+                position: relative;
+                &-btn {
+                    background: inherit;
+                    display: block;
+                    border-radius: 30px 0 0 30px;
+                    padding: 6px 6px 6px 24px;
+                    @extend .signin;
+                    &:hover {
+                        cursor: pointer;
+                        background: $greenHover;
+                    }
+                }
+                & svg {
+                    display: block;
+                    height: inherit;
+                    padding: 6px 24px 6px 10px;
+                    border-radius: 0 30px 30px 0;
+                    &:hover {
+                        cursor: pointer;
+                        background: $greenHover;
+                    }
+                }
+            }
+            &-reg {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                background: inherit;
+                border-radius: 30px;
+                padding: 6px 0;
+                z-index: -1;
+                transition: top 0.7s cubic-bezier(0, 0.5, 0.5, 1);
+                &:hover {
+                    cursor: pointer;
+                    background: $greenHover;
+                }
+                &-link {
+                    @extend .signin;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.CTA-block {
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin-top: 123px;
+    height: 520px;
+    &__title {
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+    }
+    &__text {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #aaaaaa;
+    }
+    &__socials {
+        margin-top: 43px;
+        display: flex;
+        &-item {
+            @extend .center;
+            width: 60px;
+            height: 60px;
+            background: #f2f2f2;
+            border-radius: 15px;
+            margin-right: 34px;
+        }
+    }
+    &__button {
+        width: 275px;
+        background: $green;
+        border-radius: 30px;
+        padding: 17px 64px;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        color: #ffffff;
+        margin-top: 58px;
+        &:hover {
+            background: $greenHover;
+            cursor: pointer;
+        }
+    }
+}
+
+.fab {
+    color: #aaa;
+    font-size: 36px;
+}

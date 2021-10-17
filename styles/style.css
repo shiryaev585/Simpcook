@@ -1,0 +1,215 @@
+.signin, .header__menu-item-sign-btn, .header__menu-item-reg-link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+
+.center, .CTA-block__socials-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.content {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 43px 0 0 0;
+}
+
+.header__logo-simpcook {
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.header__logo mark {
+  background-color: #fff;
+  font-weight: 700;
+  color: #f58d41;
+}
+
+.header__menu-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.header__menu-item {
+  margin-left: 55px;
+}
+
+.header__menu-item-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #222222;
+}
+
+.header__menu-item-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #57be6c;
+  border-radius: 30px;
+  position: relative;
+}
+
+.header__menu-item-sign-btn {
+  background: inherit;
+  display: block;
+  border-radius: 30px 0 0 30px;
+  padding: 6px 6px 6px 24px;
+}
+
+.header__menu-item-sign-btn:hover {
+  cursor: pointer;
+  background: #4fb163;
+}
+
+.header__menu-item-sign svg {
+  display: block;
+  height: inherit;
+  padding: 6px 24px 6px 10px;
+  border-radius: 0 30px 30px 0;
+}
+
+.header__menu-item-sign svg:hover {
+  cursor: pointer;
+  background: #4fb163;
+}
+
+.header__menu-item-reg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: inherit;
+  border-radius: 30px;
+  padding: 6px 0;
+  z-index: -1;
+  -webkit-transition: top 0.7s cubic-bezier(0, 0.5, 0.5, 1);
+  transition: top 0.7s cubic-bezier(0, 0.5, 0.5, 1);
+}
+
+.header__menu-item-reg:hover {
+  cursor: pointer;
+  background: #4fb163;
+}
+
+.header__menu-item-reg-link {
+  display: block;
+  text-align: center;
+}
+
+.CTA-block {
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 123px;
+  height: 520px;
+}
+
+.CTA-block__title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+
+.CTA-block__text {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #aaaaaa;
+}
+
+.CTA-block__socials {
+  margin-top: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.CTA-block__socials-item {
+  width: 60px;
+  height: 60px;
+  background: #f2f2f2;
+  border-radius: 15px;
+  margin-right: 34px;
+}
+
+.CTA-block__button {
+  width: 275px;
+  background: #57be6c;
+  border-radius: 30px;
+  padding: 17px 64px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  margin-top: 58px;
+}
+
+.CTA-block__button:hover {
+  background: #4fb163;
+  cursor: pointer;
+}
+
+.fab {
+  color: #aaa;
+  font-size: 36px;
+}
+/*# sourceMappingURL=style.css.map */
