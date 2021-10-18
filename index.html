@@ -21,7 +21,6 @@
     </head>
     <body>
         <section class="content">
-
             <header class="header">
                 <div class="header__logo">
                     <span class="header__logo-simpcook"
@@ -55,7 +54,6 @@
                                 Sign In
                             </button>
                             <svg
-                                class="header__arrow-down"
                                 width="26"
                                 height="14"
                                 viewBox="0 0 26 14"
@@ -80,7 +78,6 @@
             </header>
 
             <main class="main-content">
-                
                 <section class="offer">
                     <h1 class="offer__title">
                         Professional cooking <br />with great chef
@@ -92,29 +89,60 @@
                         served <br />simply.
                     </p>
                     <div class="offer__socials">
-                        <a class="offer__socials-item" href="https://www.instagram.com/" target="_blanc">
+                        <a
+                            class="offer__socials-item"
+                            href="https://www.instagram.com/"
+                            target="_blanc"
+                        >
                             <i class="fab fa-instagram-square"></i>
                         </a>
-                        <a class="offer__socials-item" href="https://www.facebook.com/" target="_blanc">
+                        <a
+                            class="offer__socials-item"
+                            href="https://www.facebook.com/"
+                            target="_blanc"
+                        >
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a class="offer__socials-item" href="https://twitter.com/" target="_blanc">
+                        <a
+                            class="offer__socials-item"
+                            href="https://twitter.com/"
+                            target="_blanc"
+                        >
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
-                    <button class="offer__button" >Get Started</button>
+                    <button class="offer__button">Get Started</button>
                 </section>
 
                 <section class="search">
-                    <div class="search__item">
-                        <span class="search__item-category">Ingredients</span>
-                    </div>
-                    <div class="search__item">
-                        <span class="search__item-category">Method</span>
-                    </div>
-                    <div class="search__item">
-                        <span class="search__item-category">Many Dishes</span>
-                    </div>
+                    <ul class="search__list">
+                        <li class="search__item">
+                            <span class="search__item-category">Ingredients</span>
+                            <select class="search__item-select ingredients">
+                                <option value="Beef">Beef</option>
+                                <option value="Veal">Veal</option>
+                                <option value="Pork">Pork</option>
+                            </select>
+                        </li>
+                        <li class="search__item ml-120">
+                            <span class="search__item-category">Method</span>
+                            <select class="search__item-select method">
+                                <option value="Roast">Roast</option>
+                                <option value="Rare">Rare</option>
+                                <option value="Medium">Medium</option>
+                            </select>
+                        </li>
+                        <li class="search__item ml-120">
+                            <span class="search__item-category"
+                                >Many Dishes</span
+                            >
+                            <select class="search__item-select dishes">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </li>
+                    </ul>
                     <button class="search__button">Search</button>
                 </section>
             </main>
@@ -124,6 +152,6 @@
             src="https://kit.fontawesome.com/78385ab4f4.js"
             crossorigin="anonymous"
         ></script>
-        <script src="./js/index.js"></script>
+        <script type="module" src="./js/index.js"></script>
     </body>
 </html>
